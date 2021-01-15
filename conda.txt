@@ -1,0 +1,5 @@
+ conda info -e = to list environment list 
+ 
+ --------create file .gitignore to ignore files which you dont want to get in server
+ no go to gitignore.io and put django and create 
+ 
