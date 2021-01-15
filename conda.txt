@@ -2,4 +2,9 @@
  
  --------create file .gitignore to ignore files which you dont want to get in server
  no go to gitignore.io and put django and create 
- 
+ -now create models for database 
+ -instead of updating job and other status on html we use databse to auto it 
+ -use pillow to recognize image files in model 
+ -register model on admin page
+ -for using static file define static directory and then 
+ add static in urls.py 
