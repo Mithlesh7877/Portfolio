@@ -8,3 +8,4 @@
  -register model on admin page
  -for using static file define static directory and then 
  add static in urls.py 
+ -collect static files

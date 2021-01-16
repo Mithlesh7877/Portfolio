@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html lang="en">
-  {%load static%}
+{%load static%}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,7 +64,7 @@
               <a class="nav-link" href="{%static 'MithileshResume.pdf'%}">Resume</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="{% url 'allblogs'%}">Blog</a>
+              <a class="nav-link active " href="{% url 'allblogs'%}">Blog</a>
             </li>
           </ul>
         </div>
@@ -73,39 +73,17 @@
 </header>
 
 <main>
-
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="jumbotron-heading">Hi, I'm Mithilesh</h1>
-        <p class="lead text-muted">Curios learner and always learning something.</p>
-        <!-- <p>
-          <a href="mailto:mkyrudra@gmail.com" class="btn btn-primary my-2">Email me</a>
-        </p> -->
-        <img src="{%static 'photo.jpg'%}" height=300/>
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {%for job in jobs.all%}
-        <div class="col">
-          <div class="card shadow-sm">
-            <img class="card-img-top" src="{{job.image.url}}" width="100%" height="225"/><rect width="100%" height="100%" fill="#55595c"/S>
-
-            <div class="card-body">
-              <p class="card-text">{{job.summary}}</p>
-            </div>
-          </div>
-        </div>
-        {%endfor%}
-      </div>
-    </div>
-  </div>
-
+<div class="container">
+<h1 class="text-center pt-3">Welcome to Blog</h1>
+<br>
+<br>
+<h2>Latest Post</h2>
+<hr/>
+{%for blog in blogs.all%}
+<a href="">{{blog.blogtitle}}</a>
+<br/>
+{%endfor%}
+</div>
 </main>
 
 <footer class="text-muted py-5">

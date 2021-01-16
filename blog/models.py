@@ -10,3 +10,6 @@ class Blog(models.Model):
     publishdate=models.DateTimeField()
     body=models.CharField(max_length=300)
     image=image=models.ImageField(upload_to="images/")
+
+    def __str__(self):
+        return self.blogtitle
