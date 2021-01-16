@@ -1,3 +1,12 @@
 from django.db import models
 
-# Create your models here.
+# create models
+# add blog app
+# create migrate
+# migrate
+# add admin
+class Blog(models.Model):
+    blogtitle=models.CharField(max_length=200)
+    publishdate=models.DateTimeField()
+    body=models.CharField(max_length=300)
+    image=image=models.ImageField(upload_to="images/")
